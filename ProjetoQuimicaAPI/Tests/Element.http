@@ -1,0 +1,35 @@
+### Listar os Elements Calculados
+GET https://localhost:5001/api/element/list
+
+### Calcular um Element Químico
+POST https://localhost:5001/api/element/create
+Content-Type: application/json
+
+{
+    "symbol" : "Fe",
+    "z" : "26",
+    "familyId": 8
+
+}
+
+### Buscar um Element Químico pelo seu Simbolo
+GET https://localhost:5001/api/element/search/Fe
+
+### Filtrar um Element Químico pela Familia
+GET https://localhost:5001/api/element/filter/8
+
+### Alterar um Elements Químico
+PATCH  https://localhost:5001/api/element/update
+Content-Type: application/json
+
+{
+    "id" :  30,
+    "symbol" : "Fe",
+    "z" : "26",
+    "eletronicConfiguration": "",
+    "familyId": 8,
+    "criadoEm": "2022-10-01T00:16:28.3465991"
+}
+
+### Deletar um Elements Químico pelo Id
+DELETE https://localhost:5001/api/element/delete/33
