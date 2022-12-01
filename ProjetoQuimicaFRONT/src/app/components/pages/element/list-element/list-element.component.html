@@ -1,1 +1,25 @@
-<p>list-element works!</p>
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Listagem dos calculos </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Símbolo</th>
+        <th>Número Atômico</th>
+        <th>Grupo</th>
+        <th>Família</th>
+        <th>Distribuição Eletrônica</th>
+      </tr>
+      <tr *ngFor="let element of elements">
+        <td>{{ element.id }}</td>
+        <td>{{ element.symbol}}</td>
+        <td>{{ element.z}}</td>
+        <td>{{ element.familyId}}</td>
+        <td>{{ element.family?.specificName}}</td>
+        <td>{{ element.eletronicConfiguration}}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>

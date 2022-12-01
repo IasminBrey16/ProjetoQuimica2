@@ -19,15 +19,13 @@ import { CreateElementComponent } from './components/pages/element/create-elemen
 import { ListElementComponent } from './components/pages/element/list-element/list-element.component';
 import { FilterElementComponent } from './components/pages/element/filter-element/filter-element.component';
 import { CreateFamilyComponent } from './components/pages/family/create-family/create-family.component';
-import { SearchElementComponent } from './components/pages/element/search-element/search-element.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     CreateElementComponent, 
     ListElementComponent, 
-    FilterElementComponent, 
-    SearchElementComponent,
+    FilterElementComponent,
     CreateFamilyComponent
   ],
   imports: [

@@ -1,1 +1,40 @@
-<p>update-element works!</p>
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-title> Filtrar Calculos por familia </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field id="family" class="input">
+            <mat-label for="family">Familia</mat-label>
+            <mat-select [(ngModel)]="familyId">
+            <mat-option *ngFor="let family of families" value="{{ family.id }}">
+                {{ family.name }} - {{ family.specificName }}
+            </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Símbolo</th>
+                <th>Número Atômico</th>
+                <th>Grupo</th>
+                <th>Família</th>
+                <th>Distribuição Eletrônica</th>
+            </tr>
+            <tr *ngFor="let element of elements">
+                <td>{{ element.id }}</td>
+                <td>{{ element.symbol}}</td>
+                <td>{{ element.z}}</td>
+                <td>{{ element.familyId}}</td>
+                <td>{{ element.family?.specificName}}</td>
+                <td>{{ element.eletronicConfiguration}}</td>
+            </tr>
+        </table>
+    </mat-card-content>
+    <button
+    mat-raised-button
+    color="primary"
+    id="btnCadastrar"
+    (click)="filtrar()"
+  >Filtrar
+  </button>
+</mat-card>

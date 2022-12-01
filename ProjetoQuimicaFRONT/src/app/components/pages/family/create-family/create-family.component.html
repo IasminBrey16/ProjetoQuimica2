@@ -1,1 +1,14 @@
-<p>create-family works!</p>
+<mat-card class="container">
+    <mat-card-header> <mat-card-title> Cadastrar Familia </mat-card-title> </mat-card-header>
+    <mat-card-content>
+      <mat-form-field id="name" class="input">
+        <mat-label for="name">Nome:</mat-label>
+        <input matInput type="text" id="name" [(ngModel)]="name" />
+      </mat-form-field>
+      <mat-form-field id="specificName" class="input">
+        <mat-label for="specificName">Nome Especifico:</mat-label>
+        <input matInput type="text" id="specificName" [(ngModel)]="specificName" />
+      </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button color="primary" id="btnCadastrar" (click)="cadastrar()">Salvar</button>
+  </mat-card>

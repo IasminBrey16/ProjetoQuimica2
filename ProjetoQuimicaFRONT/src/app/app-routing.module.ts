@@ -4,7 +4,6 @@ import { CreateFamilyComponent } from "./components/pages/family/create-family/c
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { FilterElementComponent } from "./components/pages/element/filter-element/filter-element.component";
-import { SearchElementComponent } from "./components/pages/element/search-element/search-element.component";
 
 const routes: Routes = [
   {
@@ -16,16 +15,12 @@ const routes: Routes = [
     component: CreateElementComponent,
   },
   {
-    path: "pages/element/listar",
+    path: "pages/element/list",
     component: ListElementComponent,
   },
   {
-    path: "pages/element/filter/:familyId",
+    path: "pages/element/filter",
     component: FilterElementComponent,
-  },
-  {
-    path: "pages/element/search/:symbol",
-    component: SearchElementComponent,
   },
 ];
 

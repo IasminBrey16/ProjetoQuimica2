@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fv6M6Ckbi0wQAy2UDZoEwGr79c6dpZfFM1rEDos+/yzhkSZK7bMqslptXRjFHrwVGEYlcX5M+Ln4vZyTX0vkEA==",
+  "dgSpecHash": "aTyI64UUJz9KwZM9cUDzSQM+LGDsZ7NmFsI4gx7jbPC7A8ZsZ8QD7wXVcxPiGPSy52s3p5JXbgq/r7uqteud1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\ProjetoQuimicaAPI\\Elementos_Quimicos.csproj",
+  "projectFilePath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica2\\ProjetoQuimicaAPI\\Elementos_Quimicos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Brey\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Brey\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
