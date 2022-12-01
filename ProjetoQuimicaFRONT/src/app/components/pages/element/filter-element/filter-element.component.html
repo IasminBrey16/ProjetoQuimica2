@@ -3,8 +3,8 @@
       <mat-card-title> Filtrar Calculos por familia </mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <mat-form-field id="family" class="input">
-            <mat-label for="family">Familia</mat-label>
+        <mat-form-field id="familyId" class="input">
+            <mat-label for="familyId">Familia</mat-label>
             <mat-select [(ngModel)]="familyId">
             <mat-option *ngFor="let family of families" value="{{ family.id }}">
                 {{ family.name }} - {{ family.specificName }}

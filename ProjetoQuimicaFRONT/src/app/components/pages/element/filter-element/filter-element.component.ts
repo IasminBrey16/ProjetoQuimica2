@@ -15,10 +15,18 @@ export class FilterElementComponent implements OnInit {
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit(){}
+  ngOnInit(){
+    this.http
+      .get<Family[]>("https://localhost:5001/api/family/list")
+      .subscribe({
+        next: (families) => {
+          this.families = families;
+        },
+      });
+  }
 
   filtrar(){
-    this.http.get<Element[]>("https://localhost:5001/api/element/filter/" + this.familyId.toString())
+    this.http.get<Element[]>("https://localhost:5001/api/element/filter/${" + this.familyId + "}")
     .subscribe({next: (elements) => { this.elements = elements;},});
   }
 

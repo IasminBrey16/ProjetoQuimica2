@@ -60,6 +60,8 @@ namespace Elementos_Quimicos
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Elementos_Quimicos v1"));
             }
 
+            app.UseCors("CorsPolicy");
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
